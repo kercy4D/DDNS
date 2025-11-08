@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Configuration du DDNS sur Bind9</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>Configuration du DDNS sur Bind9</h1><br/><p><strong><h1>Definition des termes et Roles de composants</h1></strong> fait 2025/10/25 - 02:24</p><p></p><p> C&#39;est quoi <strong>un serveur DNS</strong>(Domain Name System) est un composant essentiel d&#39;internet qui agit comme un annuaire ou un repertoire telephonique pour les noms de domaine.</p><p> </p><p> Exemple : <a href="http://www.google.com">www.google.com</a> -→  142.250.192.4</p><p> </p><p> C&#39;est quoi un <strong>DDNS</strong> (Dynamic Domain Name System) est une extension du systeme DNS classique ,concue pour gerer les addresses IP Dynamiques.</p><p> </p><p> C&#39;est quoi <strong>TSIG</strong> il s&#39;agit d&#39;un mecanisme de securite base sur des cles partagees(HMAC) pour authentifier les mises a jour DNS.</p><p> </p><p> C&#39;est quoi <strong>nsupdate</strong> il s&#39;agit d&#39;un outil en ligne de commande pour envoyer des requetes de mise a jour DNS Dynamiques.</p><p> </p><p> C&#39;est quoi <strong>ddclient</strong> (ou equivalent) : il s&#39;agit d&#39;un client leger qui detecte les changements d&#39;adresse IP et envoie automatiquement des mises a jour DNS.</p><p> </p><p> C&#39;est quoi <strong>named.conf</strong> : il s&#39;agit de fichier principal de configuration.</p><p> C&#39;est quoi <strong>named.conf.local</strong> ou <strong>named.conf.options</strong> : il s&#39;agit de fichiers permettant de definir les zones et les ACLs.</p><p> </p><p><h3> Vue conceptuelle par contraste au DNS classique</h3></p><p> Le <strong>DNS</strong> associe un nom de domaine(comme google.com) a une adresse IP fixe.</p><p> </p><p> Le <strong>DDNS</strong>,lui,permet d&#39;associer un nom de domaine a une adresse IP qui change regulierement ,comme celles attribuees par les FAI aux connexions domestiques ou mobiles.Ideal pour les environnements en DHCP.</p><p> </p><p> </p><p> </p><p> </p></div>
+</body>
+</html>
